@@ -10,6 +10,9 @@
 		
 		<style type="text/css">
 		
+		p{
+		font-family:Arial, Helvetica, sans-serif;
+		}
 		h4{
 		font-style: italic;
 		}
@@ -26,7 +29,7 @@
 		}
 		
 		.giallo {
-			color:gold;
+			color:yellow;
 		}
 		.verde {
 			color:lime;
@@ -59,7 +62,7 @@
 
 	function validateForm1() {
 		var x = document.forms["myForm1"]["fpass1"].value;
-		if (x == "ciao1") {
+		if (x == "372") {
 		show1();
 		alert("Giusto! Scorri in basso per proseguire");
 		return false;
@@ -78,7 +81,7 @@
 	
 	function validateForm2() {
 		var x = document.forms["myForm2"]["fpass2"].value;
-		if (x == "ciao2") {
+		if (x == "monaco") {
 		show2();
 		alert("Giusto! Scorri in basso per proseguire");
 		return false;
@@ -97,7 +100,7 @@
 	
 	function validateForm3() {
 		var x = document.forms["myForm3"]["fpass3"].value;
-		if (x == "ciao3") {
+		if (x == "milano oslo atene roma") {
 		show3();
 		alert("Giusto! Scorri in basso per proseguire");
 		return false;
@@ -116,7 +119,7 @@
 	
 	function validateForm4() {
 		var x = document.forms["myForm4"]["fpass4"].value;
-		if (x == "ciao4") {
+		if (x == "mandragora" || x=="mandragola") {
 		show4();
 		alert("Giusto! Scorri in basso per proseguire");
 		return false;
@@ -134,7 +137,7 @@
 	}
 	function validateForm5() {
 		var x = document.forms["myForm5"]["fpass5"].value;
-		if (x == "ciao5") {
+		if (x == "londra") {
 		show5();
 		alert("Giusto! Scorri in basso per proseguire");
 		return false;
@@ -153,7 +156,7 @@
 	
 	function validateForm6() {
 		var x = document.forms["myForm6"]["fpass6"].value;
-		if (x == "ciao6") {
+		if (x == "h10") {
 		show6();
 		alert("Giusto! Scorri in basso per proseguire");
 		return false;
@@ -172,7 +175,7 @@
 	
 	function validateForm7() {
 		var x = document.forms["myForm7"]["fpass7"].value;
-		if (x == "ciao7") {
+		if (x == "tanti auguri") {
 		show7();
 		alert("Giusto! Scorri in basso per proseguire");
 		return false;
@@ -191,14 +194,15 @@
 	
 	function validateForm8() {
 		var x = document.forms["myForm8"]["fpass8"].value;
-		if (x == "ciao8") {
+		if (x == "b v g r") {
 		show8();
 		alert("ULTIME NOTIZIE DA LONDRA:\nE' ancora tutta intera ;)");
 		return false;
 		}
 		else {
 		alert("ULTIME NOTIZIE:\nOh no... Londra è esplosa...Come avete potuto...");
-		window.location.replace("https://i.kym-cdn.com/entries/icons/original/000/026/489/crying.jpg") <!--Da sistemare quando metto online è ho indirizzo!-->
+		window.location.replace("https://lachiesarestaurata.it/files/2017/07/Hagrid-Crying-Gif.gif"); <!--Da sistemare quando metto online è ho indirizzo!-->
+		return false;
 		}
 	}
 
@@ -213,7 +217,7 @@
 	
 	function validateForm9() {
 		var x = document.forms["myForm9"]["fpass9"].value;
-		if (x == "ciao9") {
+		if (x == "gerry scotti") {
 		show9();
 		alert("Giusto! Scorri in basso per proseguire");
 		return false;
@@ -232,7 +236,7 @@
 	
 	function validateForm10() {
 		var x = document.forms["myForm10"]["fpass10"].value;
-		if (x == "ciao10") {
+		if (x == "cardi b") {
 		show10();
 		alert("Giusto! Scorri in basso per proseguire");
 		return false;
@@ -276,6 +280,7 @@
 		<form name="myForm2" onsubmit="return validateForm2()">
 		Password: <input type="text" name="fpass2">
 		<input type="submit" value="Conferma">
+		<p><h5>Nota: Le password non accettano lettere maiuscole.</h5></p>
 		</form>
 		
 		<hr> <!--Fine parte 2-->
@@ -355,10 +360,10 @@
 								<p>LA CANZONE E’ QUELLA GIUSTA PER QUESTA SPECIALE OCCASIONE &nbsp; ;)<br>E CI INDICHERA' COME TAGLIARE I CAVI</p>
 								<p>LE NOTE CHE ABBIAMO SONO:</p>
 								<br>
-								<p><span class="blu">DO DO</span> <span class="verde">RE</span> <span class="blu">DO </span><span class="rosso">FA </span><span class="grigio">MI</span> </p>
+								<p><b><span class="blu">DO DO</span> <span class="verde">RE</span> <span class="blu">DO </span><span class="rosso">FA </span><span class="grigio">MI</span> </p>
 								<p><span class="blu">DO DO</span> <span class="verde">RE </span><span class="blu">DO </span><span class="giallo">SOL</span> <span class="rosso">FA </span></p>
 								<p><span class="blu">DO DO DO </span><span class="fuchsia">LA </span><span class="rosso">FA </span><span class="grigio">MI </span><span class="verde">RE</span></p>
-								<p><span class="marrone">SI<sup>B</sup> SI<sup>B</sup> </span><span class="fuchsia">LA</span> <span class="rosso">FA</span> <span class="giallo">SOL </span><span class="rosso">FA</span></p>
+								<p><span class="marrone">SI<sup>B</sup> SI<sup>B</sup> </span><span class="fuchsia">LA</span> <span class="rosso">FA</span> <span class="giallo">SOL </span><span class="rosso">FA</span></b></p>
 								<br><br>
 								<p><h3>ATTENZIONE!!! </h3><br>ABBIAMO SOLO UN TENTATIVO PER TAGLIARE I CAVI. </p>
 								
