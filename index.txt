@@ -277,7 +277,7 @@
 	
 	
 	<p>Login: <br>Chi è questo gnomo che adesso ha 18 anni?</p>
-	<img src="gnomo.jpg" width="300"> 
+	<img src="gnomo.JPG" width="300"> 
 	<form name="myForm0" onsubmit="return validateForm0()">
 	Password: <input type="text" name="fpass0">
 	<input type="submit" value="Conferma">
@@ -442,7 +442,7 @@
 												<hr><hr><hr>
 												<br>
 												<p><h2 style="font-size:300%">BUON 18° COMPLEANNO <br> ELENA <br>DA MAMMA, PAPA’ & BRO</h2></p>
-												<img src="elena_arancione.jpg" width="300"> <img src="elena_gangsta.jpg" width="300"> <img src="elena_cresima_ale.png" width="250">
+												<img src="elena_arancione.jpg" width="300"> <img src="elena_gangsta.jpg" width="300"> <img src="elena_cresima_ale.PNG" width="250">
 											</div>
 										</div>
 									</div>
