@@ -59,7 +59,26 @@
 	<body style="background-color:ghostwhite;">
 	
 	<script>
+	
+	function validateForm0() {
+		var x = document.forms["myForm0"]["fpass0"].value;
+		if (x == "elena" || x=="Elena") {
+		show0();
+		alert("Giusto! Scorri in basso per proseguire");
+		return false;
+		}
+		else return false;
+	}
 
+	function show0() {
+		var y = document.getElementById("myDIV0");
+		if (y.style.display === "none") {
+		y.style.display = "block";
+		} else {
+		y.style.display = "none";
+		}
+	}
+	
 	function validateForm1() {
 		var x = document.forms["myForm1"]["fpass1"].value;
 		if (x == "372") {
@@ -255,164 +274,176 @@
 	
 	</script>
 	
-
 	
-	<h2>MI SPIACE ROVINARE QUESTA GIORNATA……MA AIUTOOOO &nbsp; :'(</h2>
-	<img src="Ferragni_terrorizzata.png" width="200">
-	<p>QUALCUNO VUOLE ROVINARE TUTTO, DISTRUGGERE MILIONI DI VITE… <br>PER FAVORE AIUTATEMI… <br>C’E’ UN PAZZO CHE MI HA SCRITTO QUESTO BIGLIETTO:</p>
-	<img src="enigma1.png" width="500">
-	<p>HO PENSATO CHE CON L’AIUTO DEI MIEI FOLLOWERS FORSE POTREMO RIUSCIRE A TROVARE LA BOMBA. <br>MA POTREBBE ESSERE OVUNQUE!<br>INSIEME AL BIGLIETTO MI E’ ARRIVATO UN FILE, MA NON RIESCO AD APRIRLO.<br>BISOGNA INSERIRE UNA PASSWORD DI 3 NUMERI. <br>AVETE DELLE IDEE????<br>PRESTO <br>IL CONTO ALLA ROVESCIA E’ INIZIATO!!!</p>
 	
-	<form name="myForm1" onsubmit="return validateForm1()">
-	Password: <input type="text" name="fpass1">
+	<p>Login: <br>Chi è questo gnomo che adesso ha 18 anni?</p>
+	<img src="gnomo.jpg" width="300"> 
+	<form name="myForm0" onsubmit="return validateForm0()">
+	Password: <input type="text" name="fpass0">
 	<input type="submit" value="Conferma">
 	</form>
-
-	<hr> <!--Fine parte 1-->
+	<br>
+	<hr><hr><hr> <!--Fine parte 0 (login)-->
 	
-	<div id="myDIV1" style="display: none;">
-		<p><h3>GRAZIE SENZA DI VOI NON CE L’AVREI MAI FATTA!</h3><br>ECCO UN INDIZIO SULLA POSIZIONE DELL'OMICIDA:</p>
-		<img src="enigma3_1.png" width="700">
-		<p>C’E’ ANCHE UNO SCONTRINO</p>
-		<img src="enigma3_2.png" width="700">
-		<p>SCOPERTO? <br>BENISSIMO ALLORA ABBIAMO VINTO! <br>TELEFONO SUBITO ALLA POLIZIA ITALIANA E LI AVVISO DI CONTATTARE I COLLEGHI DI QUELLA CITTA’ PER ARRESTARLO.</p>
+	<div id="myDIV0" style="display: none;">
+		<h2>MI SPIACE ROVINARE QUESTA GIORNATA……MA AIUTOOOO &nbsp; :'(</h2>
+		<img src="Ferragni_terrorizzata.png" width="200">
+		<p>QUALCUNO VUOLE ROVINARE TUTTO, DISTRUGGERE MILIONI DI VITE… <br>PER FAVORE AIUTATEMI… <br>C’E’ UN PAZZO CHE MI HA SCRITTO QUESTO BIGLIETTO:</p>
+		<img src="enigma1.png" width="500">
+		<p>HO PENSATO CHE CON L’AIUTO DEI MIEI FOLLOWERS FORSE POTREMO RIUSCIRE A TROVARE LA BOMBA. <br>MA POTREBBE ESSERE OVUNQUE!<br>INSIEME AL BIGLIETTO MI E’ ARRIVATO UN FILE, MA NON RIESCO AD APRIRLO.<br>BISOGNA INSERIRE UNA PASSWORD DI 3 NUMERI. <br>AVETE DELLE IDEE????<br>PRESTO <br>IL CONTO ALLA ROVESCIA E’ INIZIATO!!!</p>
 		
-		<form name="myForm2" onsubmit="return validateForm2()">
-		Password: <input type="text" name="fpass2">
+		<form name="myForm1" onsubmit="return validateForm1()">
+		Password: <input type="text" name="fpass1">
 		<input type="submit" value="Conferma">
-		<p><h5>Nota: Le password non accettano lettere maiuscole.</h5></p>
 		</form>
+
+		<hr> <!--Fine parte 1-->
 		
-		<hr> <!--Fine parte 2-->
-		
-		<div id="myDIV2" style="display: none;">
-			<p><h3>NOOOOOO</h3></p>
-			<img src="Ferragni_terrorizzata.png" width="200">
-			<p>MI HANNO APPENA INFORMATO CHE ERA UNA FALSA TRACCIA PER CUI LA CACCIA CONTINUA &nbsp; >:(</p>
-			<p>DOBBIAMO ASSOLUTAMENTE EVITARE CHE LA BOMBA ESPLODA.</p>
-			<img src="bomba.png" width="300">
-			<p>HO RICEVUTO UN ALTRO MESSAGGIO, AVREBBE DOVUTO CONTENERE LE CITTA’ EUROPEE VISITATE DI RECENTE DALL'ASSASSINO, MA COSI' NON SEMBRA...</p>
-			<p><h4>“L’ANIMO SOLO TENEA… AMOR”</h4></p>
+		<div id="myDIV1" style="display: none;">
+			<p><h3>GRAZIE SENZA DI VOI NON CE L’AVREI MAI FATTA!</h3><br>ECCO UN INDIZIO SULLA POSIZIONE DELL'OMICIDA:</p>
+			<img src="enigma3_1.png" width="700">
+			<p>C’E’ ANCHE UNO SCONTRINO</p>
+			<img src="enigma3_2.png" width="700">
+			<p>SCOPERTO? <br>BENISSIMO ALLORA ABBIAMO VINTO! <br>TELEFONO SUBITO ALLA POLIZIA ITALIANA E LI AVVISO DI CONTATTARE I COLLEGHI DI QUELLA CITTA’ PER ARRESTARLO.</p>
 			
-			<form name="myForm3" onsubmit="return validateForm3()">
-			Password: <input type="text" name="fpass3">
+			<form name="myForm2" onsubmit="return validateForm2()">
+			Password: <input type="text" name="fpass2">
 			<input type="submit" value="Conferma">
+			<p><h5>Nota: Le password non accettano lettere maiuscole.</h5></p>
 			</form>
 			
-			<hr> <!--Fine parte 3-->
+			<hr> <!--Fine parte 2-->
 			
-			<div id="myDIV3" style="display: none;">
-				<p>BENE MA COME POSSIAMO CONOSCERE LA SUA PROSSIMA DESTINAZIONE? <br>ABBIAMO INTERCETTATO UN'INTERESSANTE CHIAMATA!<br>SPERIAMO CI PORTI A IDENTIFICARE CHI E' E DOV'E' ANDATO</p>
-				<img src="hogwarts.png" width="600">
-				<p><h4>"ODIO I FILM E I LIBRI DI QUESTA SAGA E NON VEDO L'ORA DI ELIMINARE LA LORO AUTRICE E I SUOI FAN"<br>"AMO SOLO UNA DELLE CREATURE MAGICHE (FLORA E FAUNA) DI QUESTA SCUOLA E ADORO QUANDO GLI STUDENTI LA ESAMINANO"</h4></p>
+			<div id="myDIV2" style="display: none;">
+				<p><h3>NOOOOOO</h3></p>
+				<img src="Ferragni_terrorizzata.png" width="200">
+				<p>MI HANNO APPENA INFORMATO CHE ERA UNA FALSA TRACCIA PER CUI LA CACCIA CONTINUA &nbsp; >:(</p>
+				<p>DOBBIAMO ASSOLUTAMENTE EVITARE CHE LA BOMBA ESPLODA.</p>
+				<img src="bomba.png" width="300">
+				<p>HO RICEVUTO UN ALTRO MESSAGGIO, AVREBBE DOVUTO CONTENERE LE CITTA’ EUROPEE VISITATE DI RECENTE DALL'ASSASSINO, MA COSI' NON SEMBRA...</p>
+				<p><h4>“L’ANIMO SOLO TENEA… AMOR”</h4></p>
 				
-				<form name="myForm4" onsubmit="return validateForm4()">
-				Password: <input type="text" name="fpass4">
+				<form name="myForm3" onsubmit="return validateForm3()">
+				Password: <input type="text" name="fpass3">
 				<input type="submit" value="Conferma">
 				</form>
 				
-				<hr> <!--Fine parte 4-->
+				<hr> <!--Fine parte 3-->
 				
-				<div id="myDIV4" style="display: none;">
-					<p><h3>CHE GUSTI DA MANIACO</h3></p>
-					<p>PERO' ALMENO ADESSO SAPPIAMO QUAL'E' IL SUO OBBIETTIVO.</p>
-					<p>MA DOVE AVRA' MESSO LA BOMBA? <br>E' PROPRIO UN INCUBO... &nbsp; T_T</p>
-					<img src="Ferragni_incubo.png" width="200">
+				<div id="myDIV3" style="display: none;">
+					<p>BENE MA COME POSSIAMO CONOSCERE LA SUA PROSSIMA DESTINAZIONE? <br>ABBIAMO INTERCETTATO UN'INTERESSANTE CHIAMATA!<br>SPERIAMO CI PORTI A IDENTIFICARE CHI E' E DOV'E' ANDATO</p>
+					<img src="hogwarts.png" width="600">
+					<p><h4>"ODIO I FILM E I LIBRI DI QUESTA SAGA E NON VEDO L'ORA DI ELIMINARE LA LORO AUTRICE E I SUOI FAN"<br>"AMO SOLO UNA DELLE CREATURE MAGICHE (FLORA E FAUNA) DI QUESTA SCUOLA E ADORO QUANDO GLI STUDENTI LA ESAMINANO"</h4></p>
 					
-					<form name="myForm5" onsubmit="return validateForm5()">
-					Password: <input type="text" name="fpass5">
+					<form name="myForm4" onsubmit="return validateForm4()">
+					Password: <input type="text" name="fpass4">
 					<input type="submit" value="Conferma">
 					</form>
 					
-					<hr> <!--Fine parte 5-->
+					<hr> <!--Fine parte 4-->
 					
-					<div id="myDIV5" style="display: none;">
-						<p>SULLA MAPPA SONO SEGNATI I LUOGHI DOVE POTREBBE AVVENIRE L'ATTENTATO.</p>
-						<img src="mappa.png" width="700">
-						<p>COME POTETE VEDERE CI VUOLE CONFONDERE E HA VISITATO MOLTI LUOGHI PRIMA DI DECIDERE DOVE PIAZZARE LA BOMBA.</p>
-						<img src="Ferragni_bomba.png" width="300">
-						<p>LA FATICA INIZIA A FARSI SENTIRE... SONO DIECI ORE CHE CERCO UNA TRACCIA...FEDE DICE CHE SONO GRAVEMENTE MALATA DI CAPELLI CRESPI...</p>
-						<p><h3>AIUTATEMI!</h3> <br>VOI RIUSCITE A IDENTIFICARE DOVE POTREBBE ESSERE E A DARMI LE COORDINATE? </p>
+					<div id="myDIV4" style="display: none;">
+						<p><h3>CHE GUSTI DA MANIACO</h3></p>
+						<p>PERO' ALMENO ADESSO SAPPIAMO QUAL'E' IL SUO OBBIETTIVO.</p>
+						<p>MA DOVE AVRA' MESSO LA BOMBA? <br>E' PROPRIO UN INCUBO... &nbsp; T_T</p>
+						<img src="Ferragni_incubo.png" width="200">
 						
-						<form name="myForm6" onsubmit="return validateForm6()">
-						Password: <input type="text" name="fpass6">
+						<form name="myForm5" onsubmit="return validateForm5()">
+						Password: <input type="text" name="fpass5">
 						<input type="submit" value="Conferma">
 						</form>
 						
-						<hr> <!--Fine parte 6-->
+						<hr> <!--Fine parte 5-->
 						
-						<div id="myDIV6" style="display: none;">
-							<p><h3>TROVATA!!!</h3></p>
-							<img src="bomba_cavi.png" width="700">
-							<p>COMPLIMENTI<br>MA FATE PRESTO…IL TEMPO STRINGE !!!</p>
-							<p>QUALE SARA’ LA GIUSTA SEQUENZA PER TAGLIARE I 4 FILI E DISINNESCARLA???</p>
-							<p>SONO STRAVOLTA E FEDE MI HA DETTO CHE UN PO’ DI MUSICA CI POTREBBE AIUTARE…</p>
-							<img src="tanti_auguri.png" width="700">
-							<p>MA CHE CANZONE E’?</p>
+						<div id="myDIV5" style="display: none;">
+							<p>SULLA MAPPA SONO SEGNATI I LUOGHI DOVE POTREBBE AVVENIRE L'ATTENTATO.</p>
+							<img src="mappa.png" width="700">
+							<p>COME POTETE VEDERE CI VUOLE CONFONDERE E HA VISITATO MOLTI LUOGHI PRIMA DI DECIDERE DOVE PIAZZARE LA BOMBA.</p>
+							<img src="Ferragni_bomba.png" width="300">
+							<p>LA FATICA INIZIA A FARSI SENTIRE... SONO DIECI ORE CHE CERCO UNA TRACCIA...FEDE DICE CHE SONO GRAVEMENTE MALATA DI CAPELLI CRESPI...</p>
+							<p><h3>AIUTATEMI!</h3> <br>VOI RIUSCITE A IDENTIFICARE DOVE POTREBBE ESSERE E A DARMI LE COORDINATE? </p>
 							
-							<form name="myForm7" onsubmit="return validateForm7()">
-							Password: <input type="text" name="fpass7">
+							<form name="myForm6" onsubmit="return validateForm6()">
+							Password: <input type="text" name="fpass6">
 							<input type="submit" value="Conferma">
 							</form>
 							
-							<hr> <!--Fine parte 7-->
-							<div id="myDIV7" style="display: none;">
-								<p>LA CANZONE E’ QUELLA GIUSTA PER QUESTA SPECIALE OCCASIONE &nbsp; ;)<br>E CI INDICHERA' COME TAGLIARE I CAVI</p>
-								<p>LE NOTE CHE ABBIAMO SONO:</p>
-								<br>
-								<p><b><span class="blu">DO DO</span> <span class="verde">RE</span> <span class="blu">DO </span><span class="rosso">FA </span><span class="grigio">MI</span> </p>
-								<p><span class="blu">DO DO</span> <span class="verde">RE </span><span class="blu">DO </span><span class="giallo">SOL</span> <span class="rosso">FA </span></p>
-								<p><span class="blu">DO DO DO </span><span class="fuchsia">LA </span><span class="rosso">FA </span><span class="grigio">MI </span><span class="verde">RE</span></p>
-								<p><span class="marrone">SI<sup>B</sup> SI<sup>B</sup> </span><span class="fuchsia">LA</span> <span class="rosso">FA</span> <span class="giallo">SOL </span><span class="rosso">FA</span></b></p>
-								<br><br>
-								<p><h3>ATTENZIONE!!! </h3><br>ABBIAMO SOLO UN TENTATIVO PER TAGLIARE I CAVI. </p>
+							<hr> <!--Fine parte 6-->
+							
+							<div id="myDIV6" style="display: none;">
+								<p><h3>TROVATA!!!</h3></p>
+								<img src="bomba_cavi.png" width="700">
+								<p>COMPLIMENTI<br>MA FATE PRESTO…IL TEMPO STRINGE !!!</p>
+								<p>QUALE SARA’ LA GIUSTA SEQUENZA PER TAGLIARE I 4 FILI E DISINNESCARLA???</p>
+								<p>SONO STRAVOLTA E FEDE MI HA DETTO CHE UN PO’ DI MUSICA CI POTREBBE AIUTARE…</p>
+								<img src="tanti_auguri.png" width="700">
+								<p>MA CHE CANZONE E’?</p>
 								
-								<form name="myForm8" onsubmit="return validateForm8()">
-								Password: <input type="text" name="fpass8">
+								<form name="myForm7" onsubmit="return validateForm7()">
+								Password: <input type="text" name="fpass7">
 								<input type="submit" value="Conferma">
-								<p><h5>Nota: Inserire le iniziali di ciascun colore nell'ordine corretto e separate da uno spazio.</h5></p>
 								</form>
 								
-								<hr> <!--Fine parte 8-->
-								<div id="myDIV8" style="display: none;">
-									<p><h3>EVVIVA AVETE DISINNESCATO LA BOMBA! &nbsp; XD</h3></p>
-									<p>MA DOBBIAMO ANCORA TROVARE I NOMI DEI COLPEVOLI.<br>PER IL PRIMO ABBIAMO QUESTI INDIZI:</p>
-									<img src="topo.png" width="300">
-									<p><h1 style="font-size:500%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+</h1></p>
-									<img src="riso.png" width="300">
+								<hr> <!--Fine parte 7-->
+								<div id="myDIV7" style="display: none;">
+									<p>LA CANZONE E’ QUELLA GIUSTA PER QUESTA SPECIALE OCCASIONE &nbsp; ;)<br>E CI INDICHERA' COME TAGLIARE I CAVI</p>
+									<p>LE NOTE CHE ABBIAMO SONO:</p>
+									<br>
+									<p><b><span class="blu">DO DO</span> <span class="verde">RE</span> <span class="blu">DO </span><span class="rosso">FA </span><span class="grigio">MI</span> </p>
+									<p><span class="blu">DO DO</span> <span class="verde">RE </span><span class="blu">DO </span><span class="giallo">SOL</span> <span class="rosso">FA </span></p>
+									<p><span class="blu">DO DO DO </span><span class="fuchsia">LA </span><span class="rosso">FA </span><span class="grigio">MI </span><span class="verde">RE</span></p>
+									<p><span class="marrone">SI<sup>B</sup> SI<sup>B</sup> </span><span class="fuchsia">LA</span> <span class="rosso">FA</span> <span class="giallo">SOL </span><span class="rosso">FA</span></b></p>
+									<br><br>
+									<p><h3>ATTENZIONE!!! </h3><br>ABBIAMO SOLO UN TENTATIVO PER TAGLIARE I CAVI. </p>
 									
-									<form name="myForm9" onsubmit="return validateForm9()">
-									Password: <input type="text" name="fpass9">
+									<form name="myForm8" onsubmit="return validateForm8()">
+									Password: <input type="text" name="fpass8">
 									<input type="submit" value="Conferma">
+									<p><h5>Nota: Inserire le iniziali di ciascun colore nell'ordine corretto e separate da uno spazio.</h5></p>
 									</form>
 									
-									<hr> <!--Fine parte 9-->
-									<div id="myDIV9" style="display: none;">
-										<p><h3>INCREDIBILE...</h3><br>GERRY SEI STATO TU? &nbsp; (°&nbsp;o&nbsp;°)</p>
-										<img src="gerry_no.jpg" width="400">
-										<hr>
-										<p>LA POLIZIA SOSTIENE PERO’ CHE AVEVA UNA COMPLICE… <br>IL SUO AMORE SEGRETO DI CUI SI PARLAVA PRIMA...</p>
-										<p>ECCO GLI INDIZI:</p>
-										<img src="trash_music.jpg" width="400">
-										<img src="tiktok.png" width="400">
+									<hr> <!--Fine parte 8-->
+									<div id="myDIV8" style="display: none;">
+										<p><h3>EVVIVA AVETE DISINNESCATO LA BOMBA! &nbsp; XD</h3></p>
+										<p>MA DOBBIAMO ANCORA TROVARE I NOMI DEI COLPEVOLI.<br>PER IL PRIMO ABBIAMO QUESTI INDIZI:</p>
+										<img src="topo.png" width="300">
+										<p><h1 style="font-size:500%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+</h1></p>
+										<img src="riso.png" width="300">
 										
-										<form name="myForm10" onsubmit="return validateForm10()">
-										Password: <input type="text" name="fpass10">
+										<form name="myForm9" onsubmit="return validateForm9()">
+										Password: <input type="text" name="fpass9">
 										<input type="submit" value="Conferma">
 										</form>
 										
-										<hr> <!--Fine parte 10-->
-										<div id="myDIV10" style="display: none;">
-											<p>ADESSO CAPISCO DI CHI ERA LA PASSIONE PER LE MANDRAGOLE...<br>IL LORO PIANO MALVAGIO E' STATO SVENTATO E VERRANNO ARRESTATI E PROCESSATI PER I LORO CRIMINI!</p>
-											<img src="cardib.jpg" width="400">
-											<img src="gerry_spaventato.png" width="350">
+										<hr> <!--Fine parte 9-->
+										<div id="myDIV9" style="display: none;">
+											<p><h3>INCREDIBILE...</h3><br>GERRY SEI STATO TU? &nbsp; (°&nbsp;o&nbsp;°)</p>
+											<img src="gerry_no.jpg" width="400">
+											<hr>
+											<p>LA POLIZIA SOSTIENE PERO’ CHE AVEVA UNA COMPLICE… <br>IL SUO AMORE SEGRETO DI CUI SI PARLAVA PRIMA...</p>
+											<p>ECCO GLI INDIZI:</p>
+											<img src="trash_music.jpg" width="400">
+											<img src="tiktok.png" width="400">
 											
-											<br>
-											<hr><hr><hr>
-											<p><h3>CI AUGURIAMO SIA STATO DIVERTENTE &nbsp; ^_^</h3></p>
-											<hr><hr><hr>
-											<br>
-											<p><h2 style="font-size:300%">BUON 18° COMPLEANNO <br> ELENA <br>DA MAMMA, PAPA’ & BRO</h2></p>
+											<form name="myForm10" onsubmit="return validateForm10()">
+											Password: <input type="text" name="fpass10">
+											<input type="submit" value="Conferma">
+											</form>
+											
+											<hr> <!--Fine parte 10-->
+											<div id="myDIV10" style="display: none;">
+												<p>ADESSO CAPISCO DI CHI ERA LA PASSIONE PER LE MANDRAGOLE...<br>IL LORO PIANO MALVAGIO E' STATO SVENTATO E VERRANNO ARRESTATI E PROCESSATI PER I LORO CRIMINI!</p>
+												<img src="cardib.jpg" width="400">
+												<img src="gerry_spaventato.png" width="350">
+												
+												<br>
+												<hr><hr><hr>
+												<p><h3>CI AUGURIAMO SIA STATO DIVERTENTE &nbsp; ^_^</h3></p>
+												<hr><hr><hr>
+												<br>
+												<p><h2 style="font-size:300%">BUON 18° COMPLEANNO <br> ELENA <br>DA MAMMA, PAPA’ & BRO</h2></p>
+												<img src="elena_arancione.jpg" width="300"> <img src="elena_gangsta.jpg" width="300"> <img src="elena_cresima_ale.png" width="250">
+											</div>
 										</div>
 									</div>
 								</div>
@@ -423,6 +454,8 @@
 			</div>
 		</div>
 	</div>
+	
+	
 
 	</body>
 </html>
